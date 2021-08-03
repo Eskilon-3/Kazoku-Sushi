@@ -1,0 +1,21 @@
+const DashboardMenu = {
+    render: (props)=> {
+        return `
+            <div class="dashboard-menu">
+                <ul>
+                  <li class="${props.selected === 'dashboard'?'selected': ''}">
+                    <a href="/#/dashboard">Dashboard</a>
+                  </li>
+                  <li class="${props.selected === 'orders'?'selected': ''}">
+                    <a href="/#/orderlist">Pedidos</a>
+                  </li>
+                  <li class="${props.selected === 'product'?'selected': ''}">
+                    <a href="/#/productlist">Produtos</a>
+                  </li>
+                </ul>
+            </div>
+        `
+    }
+}
+
+export default DashboardMenu;
